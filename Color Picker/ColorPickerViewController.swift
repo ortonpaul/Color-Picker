@@ -55,5 +55,6 @@ class ColorPickerViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         view.backgroundColor = colors[row].color
+        textLabel.text = colors[row].name
     }
 }
